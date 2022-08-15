@@ -28,9 +28,21 @@
 1.nhận task, tạo nhánh 1 khác copy toàn bộ nhánh master ở thời điểm đó, lệnh: git branch ten-nhanh
 2.chuyển qua sử dụng nhánh mới,lệnh: git checkout ten-nhanh
 -->
-<!-- git reset --hard  :reset git -->
+<!-- git reset --hard  : xóa hết tất cả thay đổi nào chưa commit lên github -->
+<!-- git revert commitid: đưa code quay trở lại commit nào thì chỉ cần revert commmit ở trên nó -->
+<!-- git log --oneline : cho log lên 1 dòng-->
 
 <!-- git flow
-1.nhận task, tạo nhánh 1 khác copy toàn bộ nhánh master ở thời điểm đó, lệnh: git branch ten-nhanh
-2.chuyển qua sử dụng nhánh mới,lệnh: git checkout ten-nhanh
+1.nhận task, tạo 1 nhánh khác và copy toàn bộ nhánh master ở thời điểm đó, lệnh: git branch ten-nhanh
+2.chuyển qua sử dụng nhánh mới, lệnh: git checkout ten-nhanh
+3.coding thì hay sử dụng 3 lệnh: git add, git commit -m '', git push
+4.trường hợp khi merger nhánh mới vào mà bị xung đột với master không cho gộp, tạ tiến hành tạo 1 nhóm mới nữa từ master
+    4.1 ở local, quay lại master, tạo 1 nhóm mới và chuyển qua sử dụng nhánh mới, vd: prod-signup
+    4.2 ở nhánh prod-signup, merge nhánh sigup vào (git merge signup)
+    4.3 merger nhánh signup => prod-signup
+    4.4 merger prod-signup => master
+ 5. trở về local, check out về lại master => git pull
+ 6.Xóa nhánh booking ở local, lệnh: git branch -d ten-nhanh
+
+
 -->
